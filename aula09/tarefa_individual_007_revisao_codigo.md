@@ -16,13 +16,13 @@
 
   2.3 Descrever algumas das ferramentas de suporte a esta atividade, com seus respectivos links no texto.   
 
-   A prática de Revisão de Código se dá normalmente num contexto em que o software (ou programa) já está operacional, ou seja, o código está exposto à uma miríade de problemas não conhecidos, pouco óbvios e às vezes inconveninentes de se tratar no momento da codificação. Dessa forma, o usuário final fica numa posição de vulnerabilidade e tem de lidar com bugs e questões de segurança. Além disso, os desenvolvedores que revisitar o código e certamente vão enfrentar problemas de legibilidade, funcionalidade (duplicação de código), performance e testagem. Daí se dá a importância dessa atividade.
-   O processo de Revisão perpassa por todos os problemas abordados como seus objetivos finais: depurar o código, resolver problemas de segurança, legibilidade e testagem e, por fim, atualizar a documentação, bem como monitorar todas essas alterações. Essa atividade, no entanto, pode ser realizada a diferentes níveis de projeto e estágios do desenvolvimento. As ferramentas mais comuns disponíveis no mercado para análise de padrões de qualidade de código para diversas linguagens são o [Codacy](https://github.com/marketplace/codacy) e o [Codefactor](https://github.com/marketplace/codefactor). Há também aplicações para padronização e formatação de commits como o [Commit Lint](https://github.com/marketplace/commit-message-lint) e - talvez - a mais popular para Revisões de Código : [Sonarqube](https://www.sonarsource.com/products/sonarqube/).
+   A prática de Revisão de Código ocorre normalmente em um contexto em que o software já está em funcionamento. Isso significa que o código está exposto a uma ampla gama de problemas desconhecidos, não óbvios e às vezes inconvenientes de serem tratados durante a codificação. Nesse sentido, os usuários finais ficam em uma posição vulnerável e precisam lidar com bugs e questões de segurança. Além disso, os desenvolvedores que revisitam o código certamente enfrentarão problemas de legibilidade, funcionalidade (como duplicação de código), desempenho e testes. Daí a importância dessa atividade.
+   
+   O processo de Revisão de Código aborda todos esses problemas e tem como objetivos depurar o código, resolver problemas de segurança, melhorar a legibilidade e facilitar os testes. Além disso, também é importante atualizar a documentação e monitorar todas as alterações feitas. Essa atividade pode ser realizada em diferentes níveis de projeto e estágios do desenvolvimento.
+   
+   As ferramentas mais comuns disponíveis no mercado para análise de padrões de qualidade de código para diversas linguagens são o [Codacy](https://github.com/marketplace/codacy) e o [Codefactor](https://github.com/marketplace/codefactor), já que elas fornecem análises de códigos, e sugestões de melhoria. 
 
-INSTRUÇÕES:
+  Há também aplicações para padronização e formatação de commits de modo a deixar suas estruturas mais consistentes com os padrões adotados, como o [Commit Lint](https://github.com/marketplace/commit-message-lint).
 
-1. No seu repositório pessoal, na sua branch pessoal, criar a pasta aula09.
-2. Commitar este arquivo respondido nesta pasta.
-3. A data limite para concluir esta tarefa é dia 10/05/2023, as 23h59min.
-
+  Por fim, uma das aplicações mais relevantes e talvez a mais popular para Revisões de Código é a [Sonarqube](https://www.sonarsource.com/products/sonarqube/) que, além de possuir todas as features já destacadas em outras ferramentas inclui a possiblidade de criar regras personalizadas de revisão e revisar projetos arquiteturais.
 </DIV/>
