@@ -16,5 +16,14 @@
     2.3 - O que já era conhecido por você.
 3. Escrever um parágrafo com suas palavras comentando o conteúdo do artigo.
 
-      De acordo com o artigo, a qualidade de código pode ser medida em termos de duplicidade de código, complexidade ciclomática elevada e ausência de testes de unidade, por exemplo. Existem, ademais, técnicas estáticas e dinâmicas de análise de código (AEC e ADC) com validações e verificações, em que o objetivo é reduzir a quantidade de erros de um bloco de código, diferente da verificação de regras de estilo (style checker) que verifica apenas formatação.
-      Quanto à AEC, seus principais produtos são: a facilidade de encontrar erros de risco elevado, líderes de projeto adquirirem uma oportunidade de estudar o código junto à equipe e possibilitar um "shift" de enfoque no projeto para as partes que mais importam.
+   **Artigo abordado: 1.7**
+
+      De acordo com o artigo, existem técnicas estáticas e dinâmicas de análise de código (AEC e ADC) com validações e verificações próprias. As realizações das etapas, por conseguinte são distintas na medida em que podem reduzir a quantidade de erros de um bloco de código ou verificar regras de formatação diferente.
+      Quanto à AEC, seus principais produtos são: a facilidade de encontrar erros de risco elevado, a possibilidade de que líderes de projeto estudem o código junto à equipe e a possiblidade de um "shift" de enfoque no projeto para as partes mais relevantes para a organização. Isso pode ser avaliado via métricas como:
+      1. Número de linhas de código (LOC) na medida em que podem apontar pouca coerência do código com os requisitos coletados; 
+      2. A complexidade ciclomática (CC), em que se determina uma medida de complexidade de um software de acordo com os desvios de fluxo e; 
+      3. A falta de coesão com métodos (LCOM), que mapeia as responsabilidades de uma classe de acordo com suas responsabilidades.
+
+
+   Por fim, a autora cita ferramentas de revisão e de qualidade de código, como o SonarQube e o Code Sheriff (iniciativa brasileira). Nesses aplicativos são realizadas avaliações no sentido de verificar o tamanho do projeto, a probabilidade de encontrar erros de código de acordo com a extensão do código e sua complexidade e análises de nível de modificabilidade e rastreabilidade de código.
+   Dessa forma, o artigo expõe os principais métodos de análise de código para fins de qualidade, mas não informa de maneira clara os princípios que guiam esses métodos e quais suas implicações na qualidade final do produto de acordo com cada métrica, de modo que equívocos nas decisões de orientação de projeto podem prejudicar a entrega do software final.
