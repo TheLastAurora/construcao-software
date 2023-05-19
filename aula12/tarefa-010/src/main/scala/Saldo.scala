@@ -1,4 +1,5 @@
-import scala.io.StdIn.readFloat
+import scala.io.StdIn
+
 object Saldo extends App {
- println(readFloat()*1.15)
+  println(StdIn.readFloat() * 1.15)
 }

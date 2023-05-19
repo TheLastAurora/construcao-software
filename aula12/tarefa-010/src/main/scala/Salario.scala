@@ -1,6 +1,7 @@
-import scala.io.StdIn.readFloat
-object Salario extends App{
-  val salMin = readFloat()
-  val salUser = readFloat()
-  println(s"${salUser/salMin}SM")
+import scala.io.StdIn
+
+object Salario extends App {
+  val salMin = StdIn.readFloat()
+  val salUser = StdIn.readFloat()
+  println(s"${salUser / salMin} SM")
 }
