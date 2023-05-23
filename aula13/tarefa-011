@@ -1,0 +1,129 @@
+from abc import *
+import random
+import inspect
+from itertools import ifilter
+
+
+class Animal(ABC):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @abstractclassmethod
+    def make_sound(self):
+        pass
+
+class Cachorro(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def make_sound(self):
+        print("au au.")
+    
+    def run(self):
+        print("running.")
+
+class Cavalo(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def run(self):
+        print("running.")
+
+    
+    def make_sound(self):
+        print("hiin in in hinir.")
+    
+    def run(self):
+        print("running.")
+
+
+class Preguica(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+    
+    def make_sound():
+        print("ai ai.")
+
+    def climb_tree(self):
+        print("climbing tree.")
+
+class AnimalTeste():
+
+    def __init__(self) -> None:
+        veloz, fumaca, cafe = Cavalo("Veloz", 6), Cachorro("Fumaca", 3), Preguica("Café", 5)
+        for animal in (veloz, fumaca, cafe):
+            animal.make_sound()
+
+class Veterinario():
+
+    def __init__(self) -> None:
+        pass
+
+    def exam(self, animal):
+        animal.make_sound()
+
+class Zoologico():
+    cage = [Animal(random.choice(["Rajado, Fumaca, Parágrafo, Inácio"]), random.randint(1, 20)) for animal in 10*Animal.__subclasses__()]
+
+    def expo(self):
+        for animal in self.cage:
+            attrs = (getattr(animal, name) for name in dir(animal))
+            methods = ifilter(inspect.ismethod, attrs)  
+            for method in methods:
+                try:
+                    method()
+                except TypeError:
+                    pass
+                
+
+    def __init__(self) -> None:
+        pass       
+
+
+class Produto: 
+    def __init__(self, nome_loja, preco, descricao, *args):
+        self.nome_loja = nome_loja
+        self.preco = preco
+        self.descricao = descricao
+    
+    def get_descricao(self):
+        print("Produto de informática.")
+
+class Mouse(Produto):
+
+    def __init__(self, nome_loja, preco, descricao, tipo):
+        super().__init__(nome_loja, preco, descricao)
+        self.tipo = tipo
+
+    def get_descricao(self):
+        print(f'{self.descricao} \n{self.tipo}')
+
+class Livro(Produto):
+
+    def __init__(self, nome_loja, preco, descricao, autor):
+        super().__init__(nome_loja, preco, descricao)
+        self.autor = autor
+
+    def get_descricao(self):
+        print(f'{self.descricao} \n{self.autor}')
+
+class ProdutoTeste:
+
+    carrinho = [Produto(random.choice(["HyperX", "Kingston", "Multilaser"], random.choice(["Lojinha Zé", "Primetek", "Paulista Info"])), random.randint(1, 2000), random.choice(["Descricao 1", "Descricao 2"], random.choice(["Daniel", "Paulo", "Periférico"]))) for produto in 8*Produto]
+
+    def get_products(self):
+        for item in self.carrinho:
+            attrs = (getattr(item, name) for name in dir(item))
+            methods = ifilter(inspect.ismethod, attrs)
+            for method in methods:
+                try:
+                    method()
+                except TypeError:
+                    pass
+        
+    def __init__(self) -> None:
+        pass
+
+
+
